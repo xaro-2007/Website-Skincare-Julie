@@ -32,10 +32,10 @@ header h2 {
     font-size: 28px;
 }
 
-    .chimuc {
-        padding: 0px 0px 0px 750px;
-        font-size: 20px;
-    }
+.chimuc {
+    padding: 0px 0px 0px 750px;
+    font-size: 20px;
+}
 
 nav a {
     text-decoration: none;
