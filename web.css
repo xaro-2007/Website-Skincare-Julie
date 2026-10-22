@@ -1,0 +1,204 @@
+/* 1. Cài đặt chung */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff8f8;
+    color: #444;
+    line-height: 1.6;
+}
+
+/* 2. Phần đầu trang */
+header {
+    background-color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 8px #f0dede;
+}
+
+header h2 {
+    color: #d46a87;
+    font-size: 28px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #555;
+    margin: 0 8px;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #d46a87;
+}
+
+/* 3. Đường kẻ */
+hr {
+    border: none;
+}
+
+/* 4. Banner giới thiệu */
+#home {
+    text-align: center;
+    background-color: #fce4ec;
+    padding: 70px 20px;
+}
+
+#home h1 {
+    color: #b94f70;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+#home p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+/* 5. Nút bấm */
+button {
+    background-color: #d46a87;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #b94f70;
+    transform: scale(1.05);
+}
+
+/* 6. Danh mục sản phẩm */
+section {
+    padding: 35px 40px;
+}
+
+section h3 {
+    color: #b94f70;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+section ul {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+section ul a {
+    display: block;
+    background-color: white;
+    color: #555;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #f0dede;
+}
+
+section ul a:hover {
+    background-color: #fce4ec;
+    color: #b94f70;
+}
+
+/* 7. Danh sách sản phẩm */
+#products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    background-color: white;
+}
+
+#products h3 {
+    width: 100%;
+    text-align: center;
+}
+
+#products article {
+    background-color: #fff8f8;
+    width: 250px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 3px 12px #f0dede;
+    transition: 0.3s;
+}
+
+#products article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px #e8caca;
+}
+
+#products img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#products h4 {
+    color: #555;
+    margin: 12px 0;
+    font-size: 17px;
+}
+
+#products p {
+    color: #d46a87;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* 8. Chân trang */
+footer {
+    background-color: #fce4ec;
+    color: #8d5264;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* 9. Hiển thị trên điện thoại */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px 10px;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    #home h1 {
+        font-size: 27px;
+    }
+
+    section {
+        padding: 25px 15px;
+    }
+
+    section ul {
+        justify-content: center;
+    }
+
+    #products article {
+        width: 100%;
+        max-width: 300px;
+    }
+}
