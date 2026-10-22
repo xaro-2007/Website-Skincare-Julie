@@ -1,8 +1,13 @@
-/* 1. Cài đặt chung */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
 }
 
 body {
@@ -12,20 +17,25 @@ body {
     line-height: 1.6;
 }
 
-/* 2. Phần đầu trang */
+
 header {
     background-color: white;
     padding: 20px 40px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     box-shadow: 0 2px 8px #f0dede;
+    gap: 20px;
 }
 
 header h2 {
     color: #d46a87;
     font-size: 28px;
 }
+
+    .chimuc {
+        padding: 0px 0px 0px 750px;
+        font-size: 20px;
+    }
 
 nav a {
     text-decoration: none;
@@ -38,12 +48,11 @@ nav a:hover {
     color: #d46a87;
 }
 
-/* 3. Đường kẻ */
+
 hr {
     border: none;
 }
 
-/* 4. Banner giới thiệu */
 #home {
     text-align: center;
     background-color: #fce4ec;
@@ -61,7 +70,7 @@ hr {
     margin-bottom: 25px;
 }
 
-/* 5. Nút bấm */
+
 button {
     background-color: #d46a87;
     color: white;
@@ -78,7 +87,6 @@ button:hover {
     transform: scale(1.05);
 }
 
-/* 6. Danh mục sản phẩm */
 section {
     padding: 35px 40px;
 }
@@ -111,7 +119,6 @@ section ul a:hover {
     color: #b94f70;
 }
 
-/* 7. Danh sách sản phẩm */
 #products {
     display: flex;
     flex-wrap: wrap;
@@ -159,7 +166,6 @@ section ul a:hover {
     margin-bottom: 15px;
 }
 
-/* 8. Chân trang */
 footer {
     background-color: #fce4ec;
     color: #8d5264;
@@ -168,37 +174,4 @@ footer {
     margin-top: 20px;
 }
 
-/* 9. Hiển thị trên điện thoại */
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        gap: 15px;
-        padding: 20px 10px;
-    }
 
-    nav {
-        text-align: center;
-    }
-
-    nav a {
-        display: inline-block;
-        margin: 5px;
-    }
-
-    #home h1 {
-        font-size: 27px;
-    }
-
-    section {
-        padding: 25px 15px;
-    }
-
-    section ul {
-        justify-content: center;
-    }
-
-    #products article {
-        width: 100%;
-        max-width: 300px;
-    }
-}
