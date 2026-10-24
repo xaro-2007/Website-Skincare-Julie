@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Julie Skin Care</title>
     <link rel="stylesheet" href="web.css">
+    <link rel="stylesheet" href="loginandlogout.css">
+    <script src="loginandlogout.js"></script>
 </head>
 <body>
 
@@ -17,6 +19,32 @@
             <a href="vechungtoi.html">Về chúng tôi</a> |
             <a href="giohang.html">Giỏ hàng (0)</a>
         </nav>
+        <div id="loginArea">
+        <button class="btn btn-open" onclick="openLoginModal()">Đăng nhập</button>
+    </div>
+
+    <div id="userArea">
+        <span>Xin chào, <strong id="usernameDisplay">User</strong>!</span>
+        <button class="btn btn-logout" onclick="handleLogout()">Đăng xuất</button>
+    </div>
+
+    <div id="loginModal" class="modal-overlay">
+        <div class="modal-box">
+            <h3>Đăng Nhập Hệ Thống</h3>
+            <form id="loginForm">
+                <label for="tdn">Tên đăng nhập:</label>
+                <input type="text" id="tdn" required>
+
+                <label for="mk">Mật khẩu:</label>
+                <input type="password" id="mk" required>
+
+                <div class="modal-actions">
+                    <button type="submit" class="btn btn-login">Xác nhận</button>
+                    <button type="button" class="btn btn-close" onclick="closeLoginModal()">Đóng</button>
+                </div>
+            </form>
+        </div>
+    </div>
     </header>
 
     <hr>
